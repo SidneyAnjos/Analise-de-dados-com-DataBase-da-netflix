@@ -85,11 +85,13 @@ SELECT UNNEST(STRING_TO_ARRAY(genres, '|'))
 ✔ Quebra de valores múltiplos
 ✔ Criação de dimensão dim_genres
 ✔ Implementação de tabela ponte
+```
 
 👉 Resultado: análises corretas e sem duplicidade
 
 📊 Métricas
 🎯 Média Ponderada (IMDB)
+```
 Média Ponderada =
 VAR MinAvaliacoes = 100
 VAR MediaGlobal = CALCULATE(
@@ -101,6 +103,7 @@ DIVIDE(
     SUM('fact_ratings'[rating]) + MinAvaliacoes * MediaGlobal,
     COUNT('fact_ratings'[rating]) + MinAvaliacoes
 )
+``` 
 
 ✔ Reduz viés de baixa amostragem
 ✔ Ranking mais confiável
@@ -110,6 +113,7 @@ Total de Avaliações
 Avaliações por Usuário
 Engajamento Médio
 Taxa de Avaliações Positivas
+
 🚀 Otimização
 SELECT movie_id, COUNT(*), AVG(rating)
 FROM fact_ratings
@@ -126,16 +130,19 @@ Série de crescimento
 Ranking de filmes
 Ranking por gênero
 Scatter (popularidade vs qualidade)
+
 🧠 Insights
 Popularidade ≠ Qualidade
 Crescimento acelerado de avaliações ao longo dos anos
 Gêneros com melhor performance média
 Distribuição de notas por volume
+
 💡 Aprendizados
 Modelagem correta evita distorções analíticas
 Métricas precisam considerar contexto estatístico
 Performance começa no banco de dados
 Dashboard deve contar uma história
+
 🚀 Execução
 docker-compose up
 Passos
@@ -143,6 +150,7 @@ Subir ambiente
 Ingestão no MinIO
 Processamento no PostgreSQL
 Conectar Power BI
+
 💼 Sobre
 
 Projeto desenvolvido com foco em:
