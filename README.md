@@ -3,7 +3,7 @@
 https://app.powerbi.com/groups/me/reports/1b58ac42-6c82-45d3-8295-f18efbee3d32/1b6399861a93aed20bdf?experience=power-bi
 
 ## 📌 Contexto
-<img width="1780" height="482" alt="Image" src="https://github.com/user-attachments/assets/d7de5660-7b69-493a-816f-f1e0271f47bb" />
+
 Plataformas de avaliação de filmes geram grandes volumes de dados com múltiplas dimensões (usuários, filmes, gêneros, tempo).  
 No entanto, esses dados frequentemente apresentam problemas como:
 
